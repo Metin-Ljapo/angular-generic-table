@@ -1,6 +1,6 @@
 {
   "name": "angular-generic-table",
-  "version": "4.18.0",
+  "version": "4.19.0",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -39,7 +39,9 @@
     "publish:all": "npm publish dist/@angular-generic-table/core && npm publish dist/@angular-generic-table/column-settings",
     "link-lib": "cd @angular-generic-table/core && npm link && cd ../../ && npm link @angular-generic-table/core",
     "prettier": "prettier --list-different --write '**/*.{ts,json,scss,md}'",
-    "tslint-check": "tslint-config-prettier-check ./tslint.json"
+    "tslint-check": "tslint-config-prettier-check ./tslint.json",
+    "postinstall": "rimraf dist/@angular-generic-table && npm run build:core  && copyfiles -u 1 dist/@angular-generic-table/core/**/* @angular-generic-table/column-settings/node_modules/ && npm run build:column-settings && npm run core:copy:meta && npm run column-settings:copy:meta",
+
   },
   "private": false,
   "publishConfig": {
