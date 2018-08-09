@@ -4,7 +4,7 @@ import {
 	GenericTableComponent,
 	GtRow
 } from '@angular-generic-table/core';
-import { ReplaySubject } from 'rxjs/ReplaySubject';
+import { ReplaySubject } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 
 export interface RowData extends GtRow {

@@ -7,7 +7,7 @@ import {
 	GtRow
 } from '@angular-generic-table/core';
 import { HttpClient, HttpParams } from '@angular/common/http';
-import { Observable } from 'rxjs/Observable';
+import { Observable } from 'rxjs';
 import { CustomRowComponent } from '../../../custom-row/custom-row.component';
 
 export interface Employee extends GtRow {

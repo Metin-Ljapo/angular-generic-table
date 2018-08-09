@@ -14,7 +14,7 @@ import {
 	GtCustomComponent,
 	GtRow
 } from '@angular-generic-table/core';
-import 'rxjs/add/operator/map';
+
 
 export interface RowData extends GtRow {
 	id: number;

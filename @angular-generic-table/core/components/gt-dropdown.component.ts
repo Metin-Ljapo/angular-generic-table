@@ -7,7 +7,7 @@ import {
 	Output,
 	Renderer2
 } from '@angular/core';
-import { Subject } from 'rxjs/Subject';
+import { Subject } from 'rxjs';
 import * as Tether from 'tether';
 
 @Component({
