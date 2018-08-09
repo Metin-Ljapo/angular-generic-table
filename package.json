@@ -6,6 +6,9 @@
     "type": "git",
     "url": "https://github.com/Metin-Ljapo/angular-generic-table.git"
   },
+  "directories":{
+    "@angular-generic-table": "@angular-generic-table"
+  },
   "angular-cli": {},
   "scripts": {
     "ng": "ng",
